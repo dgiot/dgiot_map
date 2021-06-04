@@ -1,0 +1,7 @@
+{application, dgiot_map,
+    [{description, "数蛙云地图"},
+        {vsn, "4.0.0"},
+        {modules, []},
+        {registered, [dgiot_map_sup]},
+        {applications, [kernel, stdlib, shuwa_framework]},
+        {mod, {dgiot_map_app, []}}]}.

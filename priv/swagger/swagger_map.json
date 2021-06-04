@@ -1,0 +1,93 @@
+{
+  "definitions": {},
+  "paths": {
+    "/map": {
+      "get": {
+        "basePath": "/",
+        "description": "获取产品地图",
+        "parameters": [
+          {
+            "description": "产品ObjectId",
+            "in": "query",
+            "name": "productid",
+            "required": true,
+            "type": "string",
+            "default": ""
+          },
+          {
+            "description": "设备编号",
+            "in": "query",
+            "name": "devaddr",
+            "required": false,
+            "type": "string",
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          },
+          "404": {
+            "description": ""
+          }
+        },
+        "summary": "获取产品地图",
+        "tags": [
+          "map"
+        ]
+      },
+      "post": {
+        "basePath": "/",
+        "security": [],
+        "description": "设置地图",
+        "consumes": [
+          "*"
+        ],
+        "parameters": [
+          {
+            "description": "产品ObjectId",
+            "in": "body",
+            "name": "productid",
+            "required": true,
+            "type": "string",
+            "default": ""
+          },
+          {
+            "description": "设备编号",
+            "in": "body",
+            "name": "devaddr",
+            "required": true,
+            "type": "string",
+            "default": ""
+          },
+          {
+            "description": "base64",
+            "in": "body",
+            "name": "base64",
+            "required": true,
+            "type": "string",
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          },
+          "404": {
+            "description": ""
+          }
+        },
+        "summary": "设置地图",
+        "tags": [
+          "map"
+        ]
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "map",
+      "description": "云地图"
+    }
+  ]
+}

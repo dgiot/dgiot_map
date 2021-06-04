@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Erlang SDK">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../../../../../../../mingw32/erlang/erl10.3" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
